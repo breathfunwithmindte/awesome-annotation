@@ -1,0 +1,613 @@
+[
+  {
+    "type": "DEFAULT_CLASS",
+    "annotations": [
+      {
+        "type": "primitive",
+        "name": "@DefaultExportOfClass",
+        "props": [
+          {
+            "key": "something",
+            "value": 123
+          },
+          "and agument 2",
+          true,
+          1,
+          "the last one"
+        ]
+      },
+      {
+        "type": "reference",
+        "name": "@OtherAnnotation",
+        "props": []
+      }
+    ],
+    "name": "DefaultExportOfClass",
+    "debug": {
+      "comment": "/**\n * % @DefaultExportOfClass something=123 ;; and agument 2 ;; true ;; 1 ;; the last one\n * & @OtherAnnotation          \n * @NonReadableAnnotation - just docs\n */",
+      "commentStartLine": 7,
+      "commentEndLine": 11,
+      "nextLineStartIndex": 190,
+      "nextLineType": "DEFAULT_EXPORT_CLASS",
+      "nextLine": "module.exports = class DefaultExportOfClass extends Error",
+      "commentLines": [
+        "* % @DefaultExportOfClass something=123 ;; and agument 2 ;; true ;; 1 ;; the last one",
+        "* & @OtherAnnotation"
+      ]
+    }
+  },
+  {
+    "type": "CLASS_STATIC_PROPERTY_UNINITIALIZED",
+    "annotations": [
+      {
+        "type": "primitive",
+        "name": "@AnnotationStaticPropertyWithoutDefaultValue",
+        "props": []
+      }
+    ],
+    "name": "propertyWithoutDefaultValue",
+    "debug": {
+      "comment": "/**\n   * %@AnnotationStaticPropertyWithoutDefaultValue\n   * \n   */",
+      "commentStartLine": 14,
+      "commentEndLine": 17,
+      "nextLineStartIndex": 319,
+      "nextLineType": "CLASS_STATIC_PROPERTY_WITHOUT_VALUE",
+      "nextLine": "static propertyWithoutDefaultValue;",
+      "commentLines": [
+        "* %@AnnotationStaticPropertyWithoutDefaultValue"
+      ]
+    }
+  },
+  {
+    "type": "CLASS_STATIC_PROPERTY",
+    "annotations": [
+      {
+        "type": "primitive",
+        "name": "@AnnotationStaticPropertyWithDefaultValue",
+        "props": []
+      }
+    ],
+    "name": "propertyWithDefaultValue",
+    "debug": {
+      "comment": "/**\n   * %@AnnotationStaticPropertyWithDefaultValue\n   */",
+      "commentStartLine": 20,
+      "commentEndLine": 22,
+      "nextLineStartIndex": 418,
+      "nextLineType": "CLASS_STATIC_PROPERTY_WITH_VALUE",
+      "nextLine": "static propertyWithDefaultValue = 5;",
+      "commentLines": [
+        "* %@AnnotationStaticPropertyWithDefaultValue"
+      ]
+    }
+  },
+  {
+    "type": "CLASS_PROPERTY_UNINITIALIZED",
+    "annotations": [
+      {
+        "type": "primitive",
+        "name": "@AnnotationPropertyWithoutDefaultValue",
+        "props": []
+      }
+    ],
+    "name": "propertyWithoutDefaultValue",
+    "debug": {
+      "comment": "/**\n   * %@AnnotationPropertyWithoutDefaultValue\n   * \n   */",
+      "commentStartLine": 25,
+      "commentEndLine": 28,
+      "nextLineStartIndex": 521,
+      "nextLineType": "CLASS_PROPERTY_WITHOUT_VALUE",
+      "nextLine": "propertyWithoutDefaultValue;",
+      "commentLines": [
+        "* %@AnnotationPropertyWithoutDefaultValue"
+      ]
+    }
+  },
+  {
+    "type": "CLASS_PROPERTY",
+    "annotations": [
+      {
+        "type": "primitive",
+        "name": "@AnnotationPropertyWithDefaultValue",
+        "props": []
+      }
+    ],
+    "name": "propertyWithDefaultValue",
+    "debug": {
+      "comment": "/**\n   * %@AnnotationPropertyWithDefaultValue\n   */",
+      "commentStartLine": 31,
+      "commentEndLine": 33,
+      "nextLineStartIndex": 607,
+      "nextLineType": "CLASS_PROPERTY_WITH_VALUE",
+      "nextLine": "propertyWithDefaultValue = 5;",
+      "commentLines": [
+        "* %@AnnotationPropertyWithDefaultValue"
+      ]
+    }
+  },
+  {
+    "type": "CLASS_STATIC_METHOD",
+    "annotations": [
+      {
+        "type": "primitive",
+        "name": "@AnnotationStaticMethod",
+        "props": []
+      }
+    ],
+    "name": "staticMethod",
+    "debug": {
+      "comment": "/**\n   * %@AnnotationStaticMethod\n   */",
+      "commentStartLine": 36,
+      "commentEndLine": 38,
+      "nextLineStartIndex": 682,
+      "nextLineType": "CLASS_STATIC_METHOD",
+      "nextLine": "static staticMethod () {}",
+      "commentLines": [
+        "* %@AnnotationStaticMethod"
+      ]
+    }
+  },
+  {
+    "type": "CLASS_STATIC_ASYNC_METHOD",
+    "annotations": [
+      {
+        "type": "primitive",
+        "name": "@AnnotationStaticAsyncMethod",
+        "props": []
+      }
+    ],
+    "name": "staticAsyncMethod",
+    "debug": {
+      "comment": "/**\n   * %@AnnotationStaticAsyncMethod\n   */",
+      "commentStartLine": 41,
+      "commentEndLine": 43,
+      "nextLineStartIndex": 758,
+      "nextLineType": "CLASS_STATIC_ASYNC_METHOD",
+      "nextLine": "static async staticAsyncMethod () {}",
+      "commentLines": [
+        "* %@AnnotationStaticAsyncMethod"
+      ]
+    }
+  },
+  {
+    "type": "CLASS_ASYNC_METHOD",
+    "annotations": [
+      {
+        "type": "primitive",
+        "name": "@AnnotationAsyncMethod",
+        "props": []
+      }
+    ],
+    "name": "asyncMethod",
+    "debug": {
+      "comment": "/**\n   * %@AnnotationAsyncMethod\n   */",
+      "commentStartLine": 46,
+      "commentEndLine": 48,
+      "nextLineStartIndex": 839,
+      "nextLineType": "CLASS_ASYNC_METHOD",
+      "nextLine": "async asyncMethod () {}",
+      "commentLines": [
+        "* %@AnnotationAsyncMethod"
+      ]
+    }
+  },
+  {
+    "type": "CLASS_METHOD",
+    "annotations": [
+      {
+        "type": "primitive",
+        "name": "@AnnotationMethod",
+        "props": []
+      }
+    ],
+    "name": "justmethod",
+    "debug": {
+      "comment": "/**\n   * %@AnnotationMethod\n   */",
+      "commentStartLine": 51,
+      "commentEndLine": 53,
+      "nextLineStartIndex": 902,
+      "nextLineType": "CLASS_METHOD",
+      "nextLine": "justmethod () {}",
+      "commentLines": [
+        "* %@AnnotationMethod"
+      ]
+    }
+  },
+  {
+    "type": "FUNCTION",
+    "annotations": [
+      {
+        "type": "primitive",
+        "name": "@DefaultExportOfNamedFunction",
+        "props": [
+          "some argument here",
+          "and agument 2",
+          true,
+          1,
+          "the last one"
+        ]
+      },
+      {
+        "type": "reference",
+        "name": "@OtherAnnotation",
+        "props": [
+          "something"
+        ]
+      }
+    ],
+    "name": "DefaultExportOfNamedFunction",
+    "debug": {
+      "comment": "/**\n * % @DefaultExportOfNamedFunction some argument here ;; and agument 2 ;; true ;; 1 ;; the last one\n * & @OtherAnnotation something\n * @NonReadableAnnotation - just docs - we will not cover the case without named function\n */",
+      "commentStartLine": 59,
+      "commentEndLine": 63,
+      "nextLineStartIndex": 1156,
+      "nextLineType": "DEFAULT_EXPORT_NAMED_FUNCTION",
+      "nextLine": "module.exports =   function DefaultExportOfNamedFunction (asdasdasd)",
+      "commentLines": [
+        "* % @DefaultExportOfNamedFunction some argument here ;; and agument 2 ;; true ;; 1 ;; the last one",
+        "* & @OtherAnnotation something"
+      ]
+    }
+  },
+  {
+    "type": "FUNCTION",
+    "annotations": [
+      {
+        "type": "primitive",
+        "name": "@DefaultExportOfNamedAsyncFunction",
+        "props": [
+          "some argument here",
+          "and agument 2",
+          true,
+          1,
+          "the last one"
+        ]
+      },
+      {
+        "type": "reference",
+        "name": "@OtherAnnotation",
+        "props": [
+          "something"
+        ]
+      }
+    ],
+    "name": "DefaultExportOfNamedAsyncFunction",
+    "debug": {
+      "comment": "/**\n * % @DefaultExportOfNamedAsyncFunction some argument here ;; and agument 2 ;; true ;; 1 ;; the last one\n * & @OtherAnnotation something\n * @NonReadableAnnotation - just docs - we will not cover the case without named function\n */",
+      "commentStartLine": 67,
+      "commentEndLine": 71,
+      "nextLineStartIndex": 1464,
+      "nextLineType": "DEFAULT_EXPORT_NAMED_ASYNC_FUNCTION",
+      "nextLine": "module.exports =async  function  DefaultExportOfNamedAsyncFunction    (asdasd)",
+      "commentLines": [
+        "* % @DefaultExportOfNamedAsyncFunction some argument here ;; and agument 2 ;; true ;; 1 ;; the last one",
+        "* & @OtherAnnotation something"
+      ]
+    }
+  },
+  {
+    "type": "CLASS",
+    "annotations": [
+      {
+        "type": "primitive",
+        "name": "@wowow",
+        "props": []
+      },
+      {
+        "type": "reference",
+        "name": "@nicenice",
+        "props": []
+      },
+      {
+        "type": "reference",
+        "name": "@NamedClassWithoutSpacesOnEqualAndExtends",
+        "props": []
+      }
+    ],
+    "name": "asdasd",
+    "debug": {
+      "comment": "/**\n * % @wowow\n * & @nicenice\n * & @NamedClassWithoutSpacesOnEqualAndExtends\n * @NonReadableAnnotation - just docs\n */",
+      "commentStartLine": 75,
+      "commentEndLine": 80,
+      "nextLineStartIndex": 1667,
+      "nextLineType": "NAMED_EXPORT_CLASS",
+      "nextLine": "module.exports.asdasd=class NamedClassWithoutSpacesOnEqualAndExtends extends Error{}",
+      "commentLines": [
+        "* % @wowow",
+        "* & @nicenice",
+        "* & @NamedClassWithoutSpacesOnEqualAndExtends"
+      ]
+    }
+  },
+  {
+    "type": "CLASS",
+    "annotations": [
+      {
+        "type": "primitive",
+        "name": "@ExportWithNameForClass",
+        "props": [
+          "some argument here",
+          "and agument 2",
+          true,
+          1,
+          "the last one"
+        ]
+      },
+      {
+        "type": "reference",
+        "name": "@OtherAnnotation",
+        "props": [
+          "something"
+        ]
+      }
+    ],
+    "name": "ExportWithNameForClass",
+    "debug": {
+      "comment": "/**\n * % @ExportWithNameForClass some argument here ;; and agument 2 ;; true ;; 1 ;; the last one\n * & @OtherAnnotation something\n * @NonReadableAnnotation - just docs\n */",
+      "commentStartLine": 83,
+      "commentEndLine": 87,
+      "nextLineStartIndex": 1925,
+      "nextLineType": "NAMED_EXPORT_CLASS",
+      "nextLine": "module.exports.ExportWithNameForClass = class ExportWithNameForClass extends Error",
+      "commentLines": [
+        "* % @ExportWithNameForClass some argument here ;; and agument 2 ;; true ;; 1 ;; the last one",
+        "* & @OtherAnnotation something"
+      ]
+    }
+  },
+  {
+    "type": "CLASS_PROPERTY_UNINITIALIZED",
+    "annotations": [
+      {
+        "type": "primitive",
+        "name": "@AnnotationStaticPropertyWithoutDefaultValue",
+        "props": []
+      }
+    ],
+    "name": "staticpropertyWithoutDefaultValue",
+    "debug": {
+      "comment": "/**\n   * %@AnnotationStaticPropertyWithoutDefaultValue\n   * \n   */",
+      "commentStartLine": 90,
+      "commentEndLine": 93,
+      "nextLineStartIndex": 2079,
+      "nextLineType": "CLASS_PROPERTY_WITHOUT_VALUE",
+      "nextLine": "staticpropertyWithoutDefaultValue;//asdasd",
+      "commentLines": [
+        "* %@AnnotationStaticPropertyWithoutDefaultValue"
+      ]
+    }
+  },
+  {
+    "type": "CLASS_STATIC_PROPERTY",
+    "annotations": [
+      {
+        "type": "primitive",
+        "name": "@AnnotationStaticPropertyWithDefaultValue",
+        "props": []
+      }
+    ],
+    "name": "propertyWithDefaultValue",
+    "debug": {
+      "comment": "/**\n    * %@AnnotationStaticPropertyWithDefaultValue\n    */",
+      "commentStartLine": 96,
+      "commentEndLine": 98,
+      "nextLineStartIndex": 2189,
+      "nextLineType": "CLASS_STATIC_PROPERTY_WITH_VALUE",
+      "nextLine": "static            propertyWithDefaultValue  =        \"ASdasd\" + 5 + 123 + 1203912039",
+      "commentLines": [
+        "* %@AnnotationStaticPropertyWithDefaultValue"
+      ]
+    }
+  },
+  {
+    "type": "CLASS_PROPERTY_UNINITIALIZED",
+    "annotations": [
+      {
+        "type": "primitive",
+        "name": "@AnnotationPropertyWithoutDefaultValue",
+        "props": [
+          123213213123123
+        ]
+      }
+    ],
+    "name": "propertyWithoutDefaultValue",
+    "debug": {
+      "comment": "/**\n    * %@AnnotationPropertyWithoutDefaultValue 123213213123123\n    * \n    */",
+      "commentStartLine": 102,
+      "commentEndLine": 105,
+      "nextLineStartIndex": 2380,
+      "nextLineType": "CLASS_PROPERTY_WITHOUT_VALUE",
+      "nextLine": "propertyWithoutDefaultValue          ; // asdasd",
+      "commentLines": [
+        "* %@AnnotationPropertyWithoutDefaultValue 123213213123123"
+      ]
+    }
+  },
+  {
+    "type": "CLASS_PROPERTY",
+    "annotations": [
+      {
+        "type": "primitive",
+        "name": "@AnnotationPropertyWithDefaultValue",
+        "props": []
+      }
+    ],
+    "name": "propertyWithDefaultValue",
+    "debug": {
+      "comment": "/**\n    * % @AnnotationPropertyWithDefaultValue\n    */",
+      "commentStartLine": 108,
+      "commentEndLine": 110,
+      "nextLineStartIndex": 2492,
+      "nextLineType": "CLASS_PROPERTY_WITH_VALUE",
+      "nextLine": "propertyWithDefaultValue  =  this.name + \"ASD\" //asdasdas",
+      "commentLines": [
+        "* % @AnnotationPropertyWithDefaultValue"
+      ]
+    }
+  },
+  {
+    "type": "CLASS_STATIC_METHOD",
+    "annotations": [
+      {
+        "type": "primitive",
+        "name": "@AnnotationStaticMethod",
+        "props": []
+      }
+    ],
+    "name": "staticMethod",
+    "debug": {
+      "comment": "/**\n    * %@AnnotationStaticMethod\n    */",
+      "commentStartLine": 113,
+      "commentEndLine": 115,
+      "nextLineStartIndex": 2600,
+      "nextLineType": "CLASS_STATIC_METHOD",
+      "nextLine": "static             staticMethod            ()                            {}",
+      "commentLines": [
+        "* %@AnnotationStaticMethod"
+      ]
+    }
+  },
+  {
+    "type": "CLASS_STATIC_ASYNC_METHOD",
+    "annotations": [
+      {
+        "type": "primitive",
+        "name": "@AnnotationStaticAsyncMethod",
+        "props": [
+          "a213213"
+        ]
+      }
+    ],
+    "name": "staticAsyncMethod",
+    "debug": {
+      "comment": "/**\n    * %@AnnotationStaticAsyncMethod a213213\n    */",
+      "commentStartLine": 118,
+      "commentEndLine": 120,
+      "nextLineStartIndex": 2746,
+      "nextLineType": "CLASS_STATIC_ASYNC_METHOD",
+      "nextLine": "static    async       staticAsyncMethod (asdasd,asd) {}",
+      "commentLines": [
+        "* %@AnnotationStaticAsyncMethod a213213"
+      ]
+    }
+  },
+  {
+    "type": "CLASS_ASYNC_METHOD",
+    "annotations": [
+      {
+        "type": "primitive",
+        "name": "@AnnotationAsyncMethod",
+        "props": [
+          "asdasdsa",
+          123123,
+          123123
+        ]
+      }
+    ],
+    "name": "___asyncMethod__",
+    "debug": {
+      "comment": "/**\n    * %@AnnotationAsyncMethod asdasdsa ;; 123123 ;; 123123\n    */",
+      "commentStartLine": 123,
+      "commentEndLine": 125,
+      "nextLineStartIndex": 2880,
+      "nextLineType": "CLASS_ASYNC_METHOD",
+      "nextLine": "async        ___asyncMethod__    ( asdasd,asd1,as,d,asd)",
+      "commentLines": [
+        "* %@AnnotationAsyncMethod asdasdsa ;; 123123 ;; 123123"
+      ]
+    }
+  },
+  {
+    "type": "CLASS_METHOD",
+    "annotations": [
+      {
+        "type": "primitive",
+        "name": "@AnnotationMethod",
+        "props": []
+      }
+    ],
+    "name": "justmethod123__",
+    "debug": {
+      "comment": "/**\n    * %@AnnotationMethod\n    */",
+      "commentStartLine": 129,
+      "commentEndLine": 131,
+      "nextLineStartIndex": 2990,
+      "nextLineType": "CLASS_METHOD",
+      "nextLine": "justmethod123__    (            )",
+      "commentLines": [
+        "* %@AnnotationMethod"
+      ]
+    }
+  },
+  {
+    "type": "FUNCTION",
+    "annotations": [
+      {
+        "type": "primitive",
+        "name": "@ExportWithNameForFunction",
+        "props": [
+          "some argument here",
+          "and agument 2",
+          true,
+          1,
+          "the last one"
+        ]
+      },
+      {
+        "type": "reference",
+        "name": "@OtherAnnotation",
+        "props": [
+          "something"
+        ]
+      }
+    ],
+    "name": "ExportWithNameForFunction",
+    "debug": {
+      "comment": "/**\n * % @ExportWithNameForFunction some argument here ;; and agument 2 ;; true ;; 1 ;; the last one\n * & @OtherAnnotation something\n * @NonReadableAnnotation - just docs - we will not cover the case without named function\n */",
+      "commentStartLine": 138,
+      "commentEndLine": 142,
+      "nextLineStartIndex": 3277,
+      "nextLineType": "NAMED_EXPORT_FUNCTION",
+      "nextLine": "module.exports.ExportWithNameForFunction = function ExportWithNameForFunction",
+      "commentLines": [
+        "* % @ExportWithNameForFunction some argument here ;; and agument 2 ;; true ;; 1 ;; the last one",
+        "* & @OtherAnnotation something"
+      ]
+    }
+  },
+  {
+    "type": "ASYNC_FUNCTION",
+    "annotations": [
+      {
+        "type": "primitive",
+        "name": "@ExportWithNameForAsyncFunction",
+        "props": [
+          "some argument here",
+          "and agument 2",
+          true,
+          1,
+          "the last one"
+        ]
+      },
+      {
+        "type": "reference",
+        "name": "@OtherAnnotation",
+        "props": [
+          "something"
+        ]
+      }
+    ],
+    "name": "ExportWithNameForAsyncFunction",
+    "debug": {
+      "comment": "/**\n * % @ExportWithNameForAsyncFunction some argument here ;; and agument 2 ;; true ;; 1 ;; the last one\n * & @OtherAnnotation something\n * @NonReadableAnnotation - just docs - we will not cover the case without named function\n */",
+      "commentStartLine": 146,
+      "commentEndLine": 150,
+      "nextLineStartIndex": 3613,
+      "nextLineType": "NAMED_EXPORT_ASYNC_FUNCTION",
+      "nextLine": "module.exports.ExportWithNameForAsyncFunction = async function ExportWithNameForAsyncFunction (){}",
+      "commentLines": [
+        "* % @ExportWithNameForAsyncFunction some argument here ;; and agument 2 ;; true ;; 1 ;; the last one",
+        "* & @OtherAnnotation something"
+      ]
+    }
+  }
+]

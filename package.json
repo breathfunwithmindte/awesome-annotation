@@ -1,0 +1,26 @@
+{
+  "name": "awesome-annotations",
+  "version": "1.0.7",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "nodemon basic.test.js"
+  },
+  "keywords": [
+    "annotations",
+    "javascript",
+    "clean",
+    "clean code",
+    "scalable projects",
+    "simple",
+    "no dependencies"
+  ],
+  "author": "Mike Karypidis",
+  "repository": {
+    "url": "https://github.com/breathfunwithmindte/awesome-annotation.git"
+  },
+  "license": "MIT"
+}
